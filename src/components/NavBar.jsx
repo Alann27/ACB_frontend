@@ -1,6 +1,5 @@
 import {
   AppBar,
-  Button,
   IconButton,
   makeStyles,
   Toolbar,

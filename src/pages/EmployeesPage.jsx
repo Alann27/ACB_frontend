@@ -1,11 +1,10 @@
 import { Alert, Button, Grid, Snackbar } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, style } from "@mui/system";
+import { Box } from "@mui/system";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Table from "../components/Table.jsx";
 import {
-  activateEmployee,
   clearErrorDeactivatingEmployee,
   clearErrorUpdatingEmployee,
   deactivateEmployee,

@@ -5,9 +5,8 @@ import {
   GridToolbarColumnsButton,
   GridToolbarContainer,
   GridToolbarDensitySelector,
-  useGridApiRef,
 } from "@mui/x-data-grid";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 let globalPages = 0;
 let globalExternalOnPageChange;
@@ -23,7 +22,6 @@ export default function Table(props) {
     pages,
     loading,
     currentPage,
-    prevPage
   } = props;
 
   globalExternalOnPageChange = externalOnPageChange;

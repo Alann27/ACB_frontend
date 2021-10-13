@@ -2,7 +2,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Redirect,
 } from "react-router-dom";
 import LoginPage from "../pages/LoginPage.jsx";
 import NotFoundPage from "../pages/NotFoundPage.jsx";
@@ -30,12 +29,3 @@ export default function AppRouter(props) {
     </Router>
   );
 }
-
-function LoginContainer() {
-  <div>
-    <Route exact path="/" render={() => <Redirect to="/login" />} />
-    <Route path="/login" component={LoginPage} />
-  </div>;
-}
-
-function DefaultContainer() {}

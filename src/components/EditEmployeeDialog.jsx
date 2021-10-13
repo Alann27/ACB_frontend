@@ -1,5 +1,4 @@
 import {
-  Alert,
   Button,
   Dialog,
   DialogContent,
@@ -7,14 +6,11 @@ import {
   Grid,
   MenuItem,
   TextField,
-  Snackbar,
 } from "@mui/material";
-import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, } from "react-redux";
 import {
   updateEmployee,
-  clearErrorUpdatingEmployee,
 } from "../redux/ducks/employeeDuck";
 
 export default function UpdateEmployeeDialog(props) {
@@ -22,8 +18,6 @@ export default function UpdateEmployeeDialog(props) {
     register,
     formState: { errors },
     handleSubmit,
-    reset,
-    clearErrors,
   } = useForm();
 
   const {
